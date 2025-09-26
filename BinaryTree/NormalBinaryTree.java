@@ -27,7 +27,7 @@ class BinaryTree{
         Populate(sc,root);
     }
     private void Populate(Scanner sc,Node root){
-        System.out.print("Do you want to Insert left Node "+root.value+" : ");
+        System.out.print("Do you want to Insert left Node "+root.value+" (true/false) : ");
         boolean left=sc.nextBoolean(); //True or False
         if(left){
             System.out.print("Insert left Node : ");
@@ -35,7 +35,7 @@ class BinaryTree{
             root.left=new Node(value);
             Populate(sc,root.left);
         }
-        System.out.print("Do you want to Insert right Node "+root.value+" : ");
+        System.out.print("Do you want to Insert right Node "+root.value+" (true/false) : ");
         boolean right=sc.nextBoolean(); //True or False
         if(right){
             System.out.print("Insert right Node : ");
